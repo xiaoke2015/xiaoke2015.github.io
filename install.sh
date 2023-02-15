@@ -1,2 +1,4 @@
 ls
-echo "It is a test"
+pod init
+pod install
+echo "auto pod"
