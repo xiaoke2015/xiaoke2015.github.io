@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>开发常用工具集合</title>
+  <script src="https://cdn.staticfile.org/vue/2.7.0/vue.min.js"></script>
+
+  <style>
+      /* 方法二 */
+    .div-container2 {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    /* border: 1px solid #ccc; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    }
+    .div3 {
+    width: 200px;
+    height: 150px;
+    /* border: 1px solid red; */
+    /* margin: 10px; */
+    }
+
+  </style>
+
+</head>
+
+<body style="margin: 20px;">
+    <h1>工具集合</h1>
+    <div id="app" class="div-container2">
+        <div v-for="item in items" class="div3">
+            <a :href="item.url">
+                <img :src="item.image" height="60px" alt="111" style="background-color: #fff; border-radius: 12px;">
+                <p>{{ item.name }}</p>
+            </a>
+        </div>
+    </div>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue.js!',
+        displayName: '习惯打卡-提醒与自律的小日常',
+        items: [
+            { 
+                name:'图标工厂', 
+                image:'https://icon.wuruihong.com/wrh/logo_bordered.png',
+                url:'https://icon.wuruihong.com/'
+            },
+            { 
+                name:'RGB转16进制', 
+                image:'https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/33/93/e3/3393e3b5-8401-4f1d-ed4c-c4af25851efd/AppIcon-R2H-0-0-1x_U007emarketing-0-0-0-4-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/180x180bb.png',
+                url:'https://www.sioe.cn/yingyong/yanse-rgb-16/'
+            },
+            { 
+                name:'bejson', 
+                image:'https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/4f/6e/56/4f6e5679-8112-fcfe-2264-13d52155a548/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/180x180bb.png',
+                url:'https://www.bejson.com/'
+            },
+            { 
+                name:'美叶', 
+                image:'https://is2-ssl.mzstatic.com/image/thumb/Purple71/v4/9c/03/6e/9c036e0d-f4a5-a4aa-d04c-c86d53fc52f8/mzl.xfehbzch.png/180x180bb.png',
+                url:'https://www.meiye.art/'
+            },
+            { 
+                name:'正则在线测试', 
+                image:'https://is2-ssl.mzstatic.com/image/thumb/Purple115/v4/2e/08/ad/2e08ad1a-f996-465d-4232-1ae171975d0d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/180x180bb.png',
+                url:'https://c.runoob.com/front-end/854/'
+            },
+            { 
+                name:'扁平化颜色', 
+                image:'https://is5-ssl.mzstatic.com/image/thumb/Purple116/v4/82/d5/0b/82d50baf-0a91-7d8b-0082-f732c2f1b1dc/AppIcon-1x_U007emarketing-0-6-0-85-220.png/180x180bb.png',
+                url:'https://flatuicolors.com/'
+            },
+            { 
+                name:'iconfont', 
+                image:'https://img.alicdn.com/imgextra/i2/O1CN01FF1t1g1Q3PDWpSm4b_!!6000000001920-55-tps-508-135.svg',
+                url:'https://www.iconfont.cn/'
+            },
+            { 
+                name:'app 应用截图', 
+                image:'https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/4a/a3/dd/4aa3dd22-f3dd-87d5-7223-7a647e27f1a6/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/100x100bb.jpg',
+                url:'https://studio.app-mockup.com/'
+            }
+        ]
+      }
+    })
+
+  </script>
+</body>
+
+</html>
+
